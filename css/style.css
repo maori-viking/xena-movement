@@ -1,12 +1,8 @@
 .hero {
   /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url(../assets/Sophie_Instagram/121977567_129001298648123_254.jpg); */
-
   /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), #FBD3D3), url(../assets/Sophie_Instagram/121977567_129001298648123_254.jpg); */
-
   /* background-image: linear-gradient(rgba(254, 174, 154, 0.5), rgba(254, 174, 154, 0.9)), url(../assets/Sophie_Instagram/121977567_129001298648123_254.jpg); */
-
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(254, 174, 154, 0.9)), url(../assets/Sophie_Instagram/121977567_129001298648123_254.jpg);
-
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -15,7 +11,7 @@
 
 section {
   text-align: center;
-  padding: 50px;
+  padding: 50px 0 50px 0;
 }
 
 h1 {
@@ -30,34 +26,16 @@ h1 {
 
 #background {
   position: fixed;
-  top: 400px;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  top: 40vh;
+  width: 100%;
   z-index: -1;
-  overflow: hidden;
   font-size: 100px;
   font-weight: 300 !important;
+  text-align: center;
 }
 
-.fade-in-up {
-  animation: fadeIn ease 3s;
-  
-  }
-
-  @keyframes fadeIn {
-  0% {
-    opacity:0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity:1;
-    transform: translateY();
-  }
-  }
-
 .about-sophie {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4) 3%, rgba(255, 255, 255, 1));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3) 3%, rgba(255, 255, 255, 1));
 
 }
 
@@ -65,8 +43,6 @@ h1 {
   height: 100%;
   object-fit: cover;
   padding-bottom: 20px;
-  /* min-width: 250px;
-  min-height: 250px; */
 }
 
 .testimonials {
@@ -79,21 +55,16 @@ h1 {
 }
 
 .headshot {
-  height: 150px;
-  width: 150px;
+  height: 350px;
+  width: 350px;
+  max-height: 70vw;
+  max-width: 70vw;
   border-radius: 50%;
-  margin: 20px;
+  margin: auto;
+  object-fit: cover;
 }
 
 /* Carousel: Move arrows and indicator so that it does not obscure the view of the content. */
-
-.carousel-control-prev {
-  left: -50px
-}
-
-.carousel-control-next {
-  right: -50px
-}
 
 .carousel-indicators {
   bottom: -50px;
@@ -101,9 +72,6 @@ h1 {
 
 /* Instagram Section */
 
-/* .card{
-  margin-bottom: 10px;
-} */
 
 /* Contact Section */
 
