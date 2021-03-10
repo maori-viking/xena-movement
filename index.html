@@ -17,9 +17,12 @@
   <!-- Custom CSS files -->
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
+  <!-- Contact form JS file -->
+  <!-- <script src="js/main.js"></script> -->
+
   <!-- CSS files for the AOS (Animate on Scroll) library -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <title>Xena | Fitness</title>
+  <title>Xena Movement | Home</title>
 </head>
 
 <body>
@@ -66,30 +69,77 @@
 
   <!-- About 'Xena' section -->
   <section class="xena">
-    <div class="container col-sm-4" data-aos="fade-up">
+    <div class="container col-md-4" data-aos="fade-up">
       <h1>Xena</h1>
-      <p>Xena is a business dedicated to educating teenage girls on the importance of health for long-lasting and happy
+      <!-- <p>Xena is a business dedicated to educating teenage girls on the importance of health for long-lasting and happy
         lives. I aim to provide scientifically backed training, nutrition, and mindset tools in a chilled and relatable
-        way for young girls to implement into their everyday lives.</p>
+        way for young girls to implement into their everyday lives.</p> -->
+      <p>Xena is a business run <b>BY girls, FOR girls.</b> We are dedicated to educating young girls about the
+        importance of self love, positive body image, and mental and physical health. We provide
+        practical tools in a chilled and relatable way to give these girls the best chance at living
+        life to their fullest potential.</p>
+    </div>
+  </section>
+
+  <!-- Xena's mission section -->
+  <section class="mission" id="mission">
+    <div class="container col-md-4">
+      <h1>Our Mission</h1>
+      <p>Our mission at Xena is to build girls who love who they are, believe they can do
+        anything, and prioritise their health physically and mentally.</p>
+      <p>We recognise the harmful culture of dieting, overtraining and negative body
+        image that the media creates.</p>
+      <p>We aim to provide science backed tools that can be implemented into young girls
+        everyday lives to improve their overall health.
+        We are the relatable, chill and positive influences young girls need!</p>
     </div>
   </section>
 
   <!-- About Sophie section -->
   <section class="about-sophie" id="about-sophie">
-    <!-- Background Div -->
-    <div id="background" data-aos="fade-in" data-aos-offset="-600" data-aos-duration="1300" data-aos-delay="50">
+    <!-- Background Div (Only displays on large screens, aos fades-away later )-->
+    <div class="d-none d-sm-block" id="background" data-aos="fade-in" data-aos-offset="-1100" data-aos-duration="1300"
+      data-aos-delay="50">
       Meet Sophie
     </div>
-    <div class="container col-md-4" data-aos="fade-up">
+
+    <!-- Background Div (Only displays on small screens, aos fades-away sooner)-->
+    <div class="d-block d-sm-none" id="background" data-aos="fade-in" data-aos-offset="-900" data-aos-duration="1300"
+      data-aos-delay="50">
+      Meet Sophie
+    </div>
+
+    <div class="container col-lg-6" data-aos="fade-up">
       <img src="assets/Sophie_Instagram/Sophie-Happy.jpg" alt="Sophie_Headshot" class="headshot">
       <br>
-      <small>Head Trainer Sophie is a certified personal trainer with certs 3 and 4 in fitness and is currently studying to
-        be a nutrition coach.
+      <small>Head Trainer Sophie is a Sydney based personal trainer with certs 3 and 4 in fitness. Sophie splits her
+        time between her PT business, with clientelle all over the Eastern Suburbs and her studies to
+        become a nutrition coach.
       </small>
 
       <br />
       <br />
-      <p><strong>Bio:</strong> I found my passion for fitness at a young age when I attended the gym with my dad, however as my passion grew I
+      <p><strong>Bio:</strong>
+        I have always had a passion for health and fitness from a young age, however I grew up in the
+        times of social media and influencers. As a young person, social media is where I receive all of
+        my information. Everything I learnt about being healthy, training, and nutrition came from social
+        media. Anybody with a social media account can post advice, so there's no surprise that I went
+        down an unhealthy track at such a young age. I copied whatever these influencers ate, drank,
+        and did. I’m sure you don't need to guess how that went for me. My self confidence, body
+        image, and overall self belief was severely impacted by this. I felt like I wasn't good enough,
+        simply because I didn't look like these influencers on instagram.
+      </p>
+      <p>
+        I then decided to go and study,
+        to educate myself on health and fitness. This led me on the path to create the XENA movement.
+        I created this business as I believe girls need a positive influence, that can relate to them and
+        their current lives. They need someone to tell them how to decipher from a positive influence,
+        and a negative one. Someone to tell them that you don't need to look a certain way or fit into
+        any sort of mould. Someone to tell them that who they are is exactly who they need to be.
+      </p>
+
+      <!-- I found my passion for fitness at a young age when I attended the gym with my dad,
+        however as my passion grew I
         started to look upon social media influencers to find my education.
         My passion grew into an unhealthy obsession as I copied these influencer's workout for workout, meal for meal. I
         had nowhere to turn, to find proper training and nutrition advice, and soon my mindset began to weaken.
@@ -103,7 +153,7 @@
         Not only this but the proven benefits of exercise on mental health are immense. By creating good habits early,
         having a space to exercise and learn about proper nutrition as well as ways to maintain our proper mental
         health, we are giving these girls the best chance at a happy and fulfilling life.
-      </p>
+      </p> -->
     </div>
   </section>
 
@@ -111,7 +161,7 @@
   <section class="testimonials" id="testimonials">
     <div class="container col-md-8">
       <h1>Testimonials</h1>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-interval="0">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -129,7 +179,8 @@
                   She pushes me to always perform and never lets me slack off.
                   <br />
                   <br />
-                  She is helping me achieve my fitness goals while still enjoying training!"</p>
+                  She is helping me achieve my fitness goals while still enjoying training!"
+                </p>
                 <p class="author">- Bronte Ayoub</p>
               </div>
 
@@ -201,78 +252,167 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- Program option's section -->
+  <section class="programme" id="programme">
+    <div class="container">
+
+      <!-- Modal -->
+      <div class="modal fade" id="programmeDetailsModal" tabindex="-1" role="dialog"
+        aria-labelledby="programmeDetailsModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="programmeDetailsModal">Programme Outcomes</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <b>Body positivity/self image</b>
+              <ul>
+                <li>understand what body positivity means</li>
+                <li>understand the importance of having a positive self image and the power of self
+                  confidence</li>
+                <li>feel empowered by their own uniqueness</li>
+                <li>Media literacy education that assists girls in becoming more critical consumers of the
+                  media</li>
+              </ul>
+
+              <b>Nutrition/exercise</b>
+              <ul>
+                <li>Realise the repercussions of ‘dieting’</li>
+                <li>Are aware of negative diet-culture and able to spot it on social media</li>
+                <li>Understand the importance of maintaining a healthy diet</li>
+                <li>Understand the importance of exercise and daily movement</li>
+                <li>Have easy ways to incorporate healthy foods and exercise into their everyday lives</li>
+                <li>Understand the types of exercise you can do and their benefits</li>
+                <li>Signs of overtraining and how to avoid it</li>
+              </ul>
+
+              <b>Daily habits for a healthy life</b>
+              <ul>
+                <li>The Importance of looking after your mental health</li>
+                <li>What is your mental health</li>
+                <li>Benefits of meditation/journaling</li>
+                <li>How to set long term & short term goals to achieve anything you want</li>
+              </ul>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-submit" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1>Programme Options</h1>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">3 Week Programme</h5>
+              <p class="card-text">This program consists of 3, 60 minute lessons over 3 weeks.</p>
+              <button type="button" class="btn btn-submit" data-toggle="modal" data-target="#programmeDetailsModal">
+                More Info..
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title">90 Minute Workshop</h5>
+              <p class="card-text">A condensed form of the 3 week program, this workshop is 90 minutes long and is held
+                over one day.</p>
+              <button type="button" class="btn btn-submit" data-toggle="modal" data-target="#programmeDetailsModal">
+                More Info..
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
-
   </section>
 
   <!-- Instagram section -->
   <section class="instagram-feed" id="instagram-feed">
-    <div class="container-fluid">
-      <div class="row">
-        <h3 class="text-left font-weight-light col-6">instagram</h3>
-        <h3 class="text-right font-weight-light col-6"><a href="https://www.instagram.com/sophiespt/">@sophiespt</a>
-        </h3>
-      </div>
-      <br />
+    <div class="container">
+      <h1>Instagram</h1>
 
-      <div class="row justify-content-center" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="100">
-        <div class="col-lg-3 col-sm-4">
-          <a href="https://www.instagram.com/p/CGl3PPHplhA/?igshid=13c1u3apke8q2"><img class="card-img insta-pic"
+      <br />
+      <div class="row" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="2000" data-aos-delay="100">
+        <div class="col-sm-4 insta-div">
+          <a href="https://www.instagram.com/p/CGl3PPHplhA/?igshid=13c1u3apke8q2" target="_blank"><img class="insta-pic"
               src="../assets/Sophie_Instagram/122040502_7183465.jpg"></a>
         </div>
 
-        <div class="col-lg-3 col-sm-4">
-          <a href="https://www.instagram.com/p/CGijSkkp71o/?igshid=mh30oid61e1g"><img class="card-img insta-pic"
+        <div class="col-sm-4 insta-div">
+          <a href="https://www.instagram.com/p/CGijSkkp71o/?igshid=mh30oid61e1g"><img class="insta-pic"
               src="../assets/Sophie_Instagram/121977567_129001298648123_254.jpg"></a>
         </div>
 
-        <div class="col-lg-3 col-sm-4">
-          <a href="https://www.instagram.com/p/CFBj-xlBDXa/?igshid=819j4x7p08mq"><img class="card-img insta-pic"
+        <div class="col-sm-4 insta-div">
+          <a href="https://www.instagram.com/p/CFBj-xlBDXa/?igshid=819j4x7p08mq"><img class="insta-pic"
               src="../assets/Sophie_Instagram/119116900_7763.jpg"></a>
         </div>
       </div>
 
-    </div>
+      <div class="row">
+        <h3 class="text-right font-weight-light col-12"><a href="https://www.instagram.com/sophiespt/">@sophiespt</a>
+        </h3>
+      </div>
   </section>
 
   <!-- Contact section -->
   <section class="contact" id="contact">
-    <div class="container col-md-8">
+    <div class="container col-lg-8">
       <h1>Contact Me</h1>
 
       <form action="post" class="contact-form justify-content-center">
-        <input type="text" class="col-md-6 name" placeholder="Name">
+        <input type="text" id="name-input" class="col-lg-6 name" placeholder="Name">
         <br />
         <br />
-        <input type="phone" class="col-md-6 phone" placeholder="Phone">
+        <input type="phone" id="phone-input" class="col-lg-6 phone" placeholder="Phone">
         <br />
         <br />
-        <input type="email" class="col-md-6 email" placeholder="Email">
+        <input type="email" id="email-input" class="col-lg-6 email" placeholder="Email">
         <br />
         <br />
-        <input type="button" class="col-md-6 btn-submit" value="submit">
+        <button type="button" onClick="submitToAPI(event)" class="col-lg-6 btn btn-submit"
+          value="submit">Submit</button>
+        <!-- <button type="button" class="col-lg-6 btn btn-submit" value="submit">Submit</button> -->
       </form>
 
-    </div>
-  </section>
+      <br />
 
-  <!-- Footer -->
-  <section class="footer">
-    <div class="container">
+      <!-- Footer -->
+      <hr class="solid">
+
+      <br />
+
       <p>
-        <br />
         <span class="d-none d-sm-block">Call or txt us on: 0499568418</span>
         <span class="d-block d-sm-none"><a class="col-sm-12 btn btn-submit" href="tel:+61499568418">Call Now</a></span>
         <br />
         <span class="d-block d-sm-none"><a class="col-sm-12 btn btn-submit"
             href="sms:+61499568418?body=Hi%20Sophie%2C%20I%27d%20like%20to%20get%20in%20touch%20with%20you%20about%20a%20consultation%20at%20your%20earliest%20convenience%2C%20my%20name%20is%20...">Or
             Text Us</a></span>
-        &#169<span id="date"></span>
-        Xena Movement, All rights included.
       </p>
+
     </div>
+    <p class="footer">
+      &#169<span id="date"></span>
+      Xena Movement, All rights included.
+    </p>
   </section>
+
+
+
 
   <!-- Small JS script to programatically change the date in the footer for copywrite -->
   <script>
@@ -283,15 +423,21 @@
 
   <!-- Adding the AOS (Animate on Scroll) library -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <!-- Initializing AOS with default parameters -->
   <script>
     AOS.init({
-      offset: 120, // offset (in px) from the original trigger point
+      offset: 200, // offset (in px) from the original trigger point
       delay: 50, // values from 0 to 3000, with step 50ms
       duration: 1200, // values from 0 to 3000, with step 50ms
       mirror: true
     });
+
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    })
   </script>
 
 </body>
+
 </html>

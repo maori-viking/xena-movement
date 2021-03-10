@@ -1,7 +1,4 @@
 .hero {
-  /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url(../assets/Sophie_Instagram/121977567_129001298648123_254.jpg); */
-  /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), #FBD3D3), url(../assets/Sophie_Instagram/121977567_129001298648123_254.jpg); */
-  /* background-image: linear-gradient(rgba(254, 174, 154, 0.5), rgba(254, 174, 154, 0.9)), url(../assets/Sophie_Instagram/121977567_129001298648123_254.jpg); */
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(254, 174, 154, 0.9)), url(../assets/Sophie_Instagram/121977567_129001298648123_254.jpg);
   height: 100vh;
   background-size: cover;
@@ -14,9 +11,19 @@ section {
   padding: 50px 0 50px 0;
 }
 
+.modal {
+  text-align: left;
+  padding: 50px 0 50px 0;
+}
+
+
 h1 {
   padding: 20px;
   font-weight: 300 !important;
+}
+
+.programme {
+  background-color: #fff;
 }
 
 .xena,
@@ -36,16 +43,20 @@ h1 {
 
 .about-sophie {
   background-image: linear-gradient(rgba(255, 255, 255, 0.3) 3%, rgba(255, 255, 255, 1));
-
 }
 
-.insta-pic {
-  height: 100%;
-  object-fit: cover;
+.insta-div { 
   padding-bottom: 20px;
 }
 
-.testimonials {
+.insta-pic { 
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.testimonials, .mission {
   background-color: #FEAE9A;
 }
 
@@ -76,7 +87,7 @@ h1 {
 /* Contact Section */
 
 .contact {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(251, 211, 211, .5)), url(../assets/Google\ Maps\ Clovelly.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(251, 211, 211, .9)), url(../assets/Google\ Maps\ Clovelly.png);
   background-size: cover;
 }
 
@@ -99,5 +110,6 @@ h1 {
 }
 
 .footer {
-  background-color: #707070;
+  position: relative;
+  top: 50px;
 }
